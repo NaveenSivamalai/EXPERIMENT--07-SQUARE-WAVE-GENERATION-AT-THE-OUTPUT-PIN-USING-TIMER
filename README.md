@@ -102,8 +102,8 @@ Step14. click on debug and simulate using simulation as shown below
 Developed by: NAVEEN S
 Reg.No: 212222110030
 */
-
-
+```
+```
 int main(void)
 {
   HAL_Init();
