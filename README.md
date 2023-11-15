@@ -98,38 +98,61 @@ Step14. click on debug and simulate using simulation as shown below
 ## STM 32 CUBE PROGRAM :
 
 
+/*
+Developed by: NAVEEN S
+Reg.No: 212222110030
+*/
 
+int main(void)
+{
+  HAL_Init();
+  SystemClock_Config();
+  MX_GPIO_Init();
+  MX_TIM2_Init();
+  HAL_TIM_Base_Start(&htim2);
+  HAL_TIM_PWM_Init(&htim2);
+  HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_1);
+  while (1)
+  {
+  }
+}
 
 
 ## Output screen shots of proteus  :
- 
+ ![274809234-aa1711c1-63ce-478c-ad87-897997299638](https://github.com/NaveenSivamalai/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/123792574/10d89517-b293-41a2-bf29-16c2bb074fe5)
+
  
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
- 
+ ![274809259-b324149e-ece9-48ca-8eb2-5735068d52c2](https://github.com/NaveenSivamalai/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/123792574/02aed4f6-891d-45ce-8c6d-f21365018768)
+
 
 ## DUTY CYCLE AND FREQUENCY CALCULATION 
 FOR PULSE AT 500
-
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
-
+![274809300-731087e9-0024-4241-ac33-4f4f38cba9ba](https://github.com/NaveenSivamalai/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/123792574/1fb3029e-8027-4a9b-9c6f-22577c91261a)
+```
+TON = 2
+TOFF= 2
+TOTAL TIME = 4
+FREQUENCY = 1/(TOTAL TIME) = 250Hz
+```
 FOR PULSE AT 700
-
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
+![274809407-25ac2f16-81ac-49b8-8150-7284880ca8a0](https://github.com/NaveenSivamalai/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/123792574/7477ab90-2d0b-4819-be95-5b8c808e4834)
+```
+TON = 3
+TOFF= 1
+TOTAL TIME = 4
+FREQUENCY = 1/(TOTAL TIME) = 250Hz
+```
 
 
 FOR PULSE AT 900
-
-TON = 
-TOFF=
-TOTAL TIME = 
-FREQUENCY = 1/(TOTAL TIME)
-
+![274809547-60490ba9-1200-4436-a9df-ed66e19f02bb](https://github.com/NaveenSivamalai/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/123792574/fccf2312-3823-4f6a-843f-edc26fe4ffc2)
+```
+TON = 3.5
+TOFF= 0.5
+TOTAL TIME = 4
+FREQUENCY = 1/(TOTAL TIME) = 250Hz
+```
 
 ## Result :
 A PWM Signal is generated using the following frequency and various duty cycles are simulated 
