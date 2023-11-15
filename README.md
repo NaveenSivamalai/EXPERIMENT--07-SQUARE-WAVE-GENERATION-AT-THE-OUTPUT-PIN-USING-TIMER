@@ -97,7 +97,7 @@ Step14. click on debug and simulate using simulation as shown below
 
 ## STM 32 CUBE PROGRAM :
 
-
+```
 /*
 Developed by: NAVEEN S
 Reg.No: 212222110030
@@ -116,7 +116,7 @@ int main(void)
   {
   }
 }
-
+```
 
 ## Output screen shots of proteus  :
  ![274809234-aa1711c1-63ce-478c-ad87-897997299638](https://github.com/NaveenSivamalai/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/123792574/10d89517-b293-41a2-bf29-16c2bb074fe5)
